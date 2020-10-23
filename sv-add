@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#  "sv-add" script by furryfixer which is glorified alias
+#  for "ln -s /etc/sv/$1 /var/service/"
+#  with an extra check to ensure operand is given and file exists
+
+if [ -z "$1" ] || [ ! -z "$2" ]; then       
+        echo "Syntax error. One and only one operand expected. "\""sv-add A"\"
+        exit 1
+fi
+if [ ! -e "/etc/sv/$1" ]; then
+	echo "Error. Service folder "\""/etc/sv/"$1\"" does not exist"
+	exit 1
+fi
+ln -s /etc/sv/$1 /var/service/
+exit
