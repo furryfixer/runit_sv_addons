@@ -1,6 +1,7 @@
 # runit-sv-addons
 For those that are comfortable with basic "**sv...**" Runit commands, and do not need an entire new toolkit, here are three simple Bash scripts to reduce typing and lessen that chance of making a mistake while linking or unlinking runit services from "/etc/sv/" to "/var/service/".  Developed with Void Linux in mind.  The short scripts are self-explanatory.
 
+##sv-add
 ```
 #!/bin/bash
 #
@@ -19,7 +20,7 @@ fi
 ln -s /etc/sv/$1 /var/service/
 exit
 ```
-
+##sv-rm
 ```
 #!/bin/bash
 #
@@ -41,7 +42,7 @@ sv d $1
 rm -r /var/service/$1
 exit
 ```
-
+##sv-replace
 ```
 #!/bin/bash
 #
