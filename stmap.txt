@@ -1,2 +1,2 @@
-https://furryfixer.github.io/runit-sv-addons/
-https://furryfixer.github.io/runit-sv-addons/index.html
+https://furryfixer.github.io/runit_sv_addons/
+https://furryfixer.github.io/runit_sv_addons/index.html
